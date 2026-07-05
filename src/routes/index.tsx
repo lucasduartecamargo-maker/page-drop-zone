@@ -17,14 +17,21 @@ import kit5 from "@/assets/kit-5.jpeg.asset.json";
 import kit6 from "@/assets/kit-6.jpeg.asset.json";
 import kit7 from "@/assets/kit-7.jpeg.asset.json";
 import kit8 from "@/assets/kit-8.jpeg.asset.json";
+import gallery1 from "@/assets/gallery/gallery-1.jpeg";
+import gallery2 from "@/assets/gallery/gallery-2.jpeg";
+import gallery3 from "@/assets/gallery/gallery-3.jpeg";
+import gallery4 from "@/assets/gallery/gallery-4.jpeg";
+import gallery5 from "@/assets/gallery/gallery-5.jpeg";
+import gallery6 from "@/assets/gallery/gallery-6.jpeg";
+import gallery7 from "@/assets/gallery/gallery-7.jpeg";
+import gallery8 from "@/assets/gallery/gallery-8.jpeg";
+import gallery9 from "@/assets/gallery/gallery-9.jpeg";
 const mockupKit = kit1;
 const exitOffer = kit2;
 
 export const Route = createFileRoute("/")({
   component: Landing,
 });
-
-const IMG = "https://kitconsultorioludico.vercel.app/imagens";
 
 function useCountdown(initialSeconds: number) {
   const [s, setS] = useState(initialSeconds);
@@ -75,9 +82,7 @@ function Landing() {
   }, []);
 
   const gallery = [
-    "atv%20psi%201.webp", "atv%20psi%202.webp", "atv%20psi%203.webp",
-    "atv%20psi%204.webp", "atv%20psi%205.webp", "recurso%202.webp",
-    "recurso%203.webp", "foto3.webp", "foto4.webp",
+    gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8, gallery9,
   ];
 
   const situations = [
@@ -237,7 +242,7 @@ function Landing() {
               {[...gallery, ...gallery].map((src, i) => (
                 <img
                   key={i}
-                  src={`${IMG}/${src}`}
+                  src={src}
                   alt={`Recurso ${i + 1}`}
                   className="w-56 h-72 object-cover rounded-xl shadow-card bg-white"
                   loading="lazy"
