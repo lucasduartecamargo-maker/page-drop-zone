@@ -9,11 +9,16 @@ import {
   CreditCard, QrCode, FileText, X,
 } from "lucide-react";
 import SocialCards from "@/components/ui/card-fan-carousel";
-import mockupKit from "@/assets/mockup-kit-v2.webp.asset.json";
-import testimonial1 from "@/assets/testimonial-1.webp.asset.json";
-import testimonial2 from "@/assets/testimonial-2.webp.asset.json";
-import testimonial3 from "@/assets/testimonial-3.webp.asset.json";
-import exitOffer from "@/assets/exit-offer.webp.asset.json";
+import kit1 from "@/assets/kit-1.jpeg.asset.json";
+import kit2 from "@/assets/kit-2.jpeg.asset.json";
+import kit3 from "@/assets/kit-3.jpeg.asset.json";
+import kit4 from "@/assets/kit-4.jpeg.asset.json";
+import kit5 from "@/assets/kit-5.jpeg.asset.json";
+import kit6 from "@/assets/kit-6.jpeg.asset.json";
+import kit7 from "@/assets/kit-7.jpeg.asset.json";
+import kit8 from "@/assets/kit-8.jpeg.asset.json";
+const mockupKit = kit1;
+const exitOffer = kit2;
 
 export const Route = createFileRoute("/")({
   component: Landing,
@@ -100,9 +105,14 @@ function Landing() {
   ];
 
   const depoCards = [
-    { imgUrl: testimonial1.url, alt: "Testimonio 1" },
-    { imgUrl: testimonial2.url, alt: "Testimonio 2" },
-    { imgUrl: testimonial3.url, alt: "Testimonio 3" },
+    { imgUrl: kit1.url, alt: "Frasco de los Recuerdos" },
+    { imgUrl: kit2.url, alt: "Baraja de Sentimientos" },
+    { imgUrl: kit3.url, alt: "Laberinto de la Calma" },
+    { imgUrl: kit4.url, alt: "Termómetro de la Ansiedad" },
+    { imgUrl: kit5.url, alt: "Rueda de las Emociones" },
+    { imgUrl: kit6.url, alt: "Personas" },
+    { imgUrl: kit7.url, alt: "Cómo puedo autorregularme" },
+    { imgUrl: kit8.url, alt: "Tarjetas de emociones" },
   ];
 
   const faqs = [
