@@ -11,12 +11,9 @@ import {
 import SocialCards from "@/components/ui/card-fan-carousel";
 import kit1 from "@/assets/kit-1.jpeg.asset.json";
 import kit2 from "@/assets/kit-2.jpeg.asset.json";
-import kit3 from "@/assets/kit-3.jpeg.asset.json";
-import kit4 from "@/assets/kit-4.jpeg.asset.json";
-import kit5 from "@/assets/kit-5.jpeg.asset.json";
-import kit6 from "@/assets/kit-6.jpeg.asset.json";
-import kit7 from "@/assets/kit-7.jpeg.asset.json";
-import kit8 from "@/assets/kit-8.jpeg.asset.json";
+import testimonial1 from "@/assets/testimonials/testimonial-1.png";
+import testimonial2 from "@/assets/testimonials/testimonial-2.png";
+import testimonial3 from "@/assets/testimonials/testimonial-3.png";
 import gallery1 from "@/assets/gallery/gallery-1.jpeg";
 import gallery2 from "@/assets/gallery/gallery-2.jpeg";
 import gallery3 from "@/assets/gallery/gallery-3.jpeg";
@@ -110,14 +107,9 @@ function Landing() {
   ];
 
   const depoCards = [
-    { imgUrl: kit1.url, alt: "Frasco de los Recuerdos" },
-    { imgUrl: kit2.url, alt: "Baraja de Sentimientos" },
-    { imgUrl: kit3.url, alt: "Laberinto de la Calma" },
-    { imgUrl: kit4.url, alt: "Termómetro de la Ansiedad" },
-    { imgUrl: kit5.url, alt: "Rueda de las Emociones" },
-    { imgUrl: kit6.url, alt: "Personas" },
-    { imgUrl: kit7.url, alt: "Cómo puedo autorregularme" },
-    { imgUrl: kit8.url, alt: "Tarjetas de emociones" },
+    { imgUrl: testimonial1, alt: "Testimonio de una psicóloga" },
+    { imgUrl: testimonial2, alt: "Testimonio de una psicóloga" },
+    { imgUrl: testimonial3, alt: "Testimonio de una psicóloga" },
   ];
 
   const faqs = [
