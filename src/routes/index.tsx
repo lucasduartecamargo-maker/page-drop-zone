@@ -9,8 +9,8 @@ import {
   CreditCard, QrCode, FileText, X,
 } from "lucide-react";
 import SocialCards from "@/components/ui/card-fan-carousel";
-import kit1 from "@/assets/kit-1.jpeg.asset.json";
 import kit2 from "@/assets/kit-2.jpeg.asset.json";
+import mockupKit from "@/assets/mockup-kit.png";
 import testimonial1 from "@/assets/testimonials/testimonial-1.png";
 import testimonial2 from "@/assets/testimonials/testimonial-2.png";
 import testimonial3 from "@/assets/testimonials/testimonial-3.png";
@@ -23,7 +23,6 @@ import gallery6 from "@/assets/gallery/gallery-6.jpeg";
 import gallery7 from "@/assets/gallery/gallery-7.jpeg";
 import gallery8 from "@/assets/gallery/gallery-8.jpeg";
 import gallery9 from "@/assets/gallery/gallery-9.jpeg";
-const mockupKit = kit1;
 const exitOffer = kit2;
 
 export const Route = createFileRoute("/")({
@@ -164,7 +163,7 @@ function Landing() {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
             <motion.img
-              src={mockupKit.url}
+              src={mockupKit}
               alt="Kit Consultorio Lúdico Playful"
               className="max-w-full w-[820px] drop-shadow-[0_25px_50px_rgba(0,0,0,0.18)] rounded-2xl"
               animate={{ y: [0, -10, 0] }}
@@ -363,7 +362,7 @@ function Landing() {
           </Reveal>
           <div className="mt-10 grid md:grid-cols-[280px_1fr] gap-8 items-center">
             <motion.img
-              src={mockupKit.url}
+              src={mockupKit}
               alt="Kit Consultorio Lúdico"
               className="w-full rounded-2xl"
               initial={{ opacity: 0, x: -30 }}
@@ -493,7 +492,7 @@ function Landing() {
               transition={{ duration: 0.6 }}
             >
               <h3 className="text-center text-primary font-black tracking-wider">KIT BÁSICO</h3>
-              <img src={mockupKit.url} alt="Kit Básico" className="mx-auto my-6 w-56 rounded-xl" />
+              <img src={mockupKit} alt="Kit Básico" className="mx-auto my-6 w-56 rounded-xl" />
               <p className="text-center text-sm text-ink-soft line-through">De USD $24,90</p>
               <p className="text-center">
                 <span className="text-4xl font-black">USD $<span className="text-6xl">9</span>,<span className="text-2xl">90</span></span>
@@ -541,7 +540,7 @@ function Landing() {
                   +227 RECURSOS + 5 BONOS
                 </span>
               </div>
-              <img src={mockupKit.url} alt="Kit Completo" className="mx-auto my-4 w-64 rounded-xl" />
+              <img src={mockupKit} alt="Kit Completo" className="mx-auto my-4 w-64 rounded-xl" />
               <p className="text-center font-semibold">El kit completo para transformar tus sesiones</p>
               <p className="text-center text-sm text-white/70 line-through mt-3">De USD $49,90</p>
               <p className="text-center">
