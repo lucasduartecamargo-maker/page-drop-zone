@@ -69,11 +69,25 @@ function Landing() {
 
   useEffect(() => {
     let fired = false;
+    const trigger = () => {
+      if (fired) return;
+      fired = true;
+      setExitOpen(true);
+    };
     const onLeave = (e: MouseEvent) => {
-      if (!fired && e.clientY < 10) { fired = true; setExitOpen(true); }
+      if (e.clientY < 10) trigger();
+    };
+    const onScroll = () => {
+      const reachedBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100;
+      if (reachedBottom) trigger();
     };
     document.addEventListener("mouseout", onLeave);
-    return () => document.removeEventListener("mouseout", onLeave);
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      document.removeEventListener("mouseout", onLeave);
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
   const gallery = [
