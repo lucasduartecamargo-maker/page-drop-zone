@@ -9,8 +9,9 @@ import {
   CreditCard, QrCode, FileText, X,
 } from "lucide-react";
 import SocialCards from "@/components/ui/card-fan-carousel";
-import kit2 from "@/assets/kit-2.jpeg.asset.json";
 import mockupKit from "@/assets/mockup-kit.png";
+import kitBasico from "@/assets/kit-basico.png";
+import exitOffer from "@/assets/exit-offer.png";
 import testimonial1 from "@/assets/testimonials/testimonial-1.png";
 import testimonial2 from "@/assets/testimonials/testimonial-2.png";
 import testimonial3 from "@/assets/testimonials/testimonial-3.png";
@@ -23,8 +24,6 @@ import gallery6 from "@/assets/gallery/gallery-6.jpeg";
 import gallery7 from "@/assets/gallery/gallery-7.jpeg";
 import gallery8 from "@/assets/gallery/gallery-8.jpeg";
 import gallery9 from "@/assets/gallery/gallery-9.jpeg";
-const exitOffer = kit2;
-
 export const Route = createFileRoute("/")({
   component: Landing,
 });
@@ -492,7 +491,7 @@ function Landing() {
               transition={{ duration: 0.6 }}
             >
               <h3 className="text-center text-primary font-black tracking-wider">KIT BÁSICO</h3>
-              <img src={mockupKit} alt="Kit Básico" className="mx-auto my-6 w-56 rounded-xl" />
+              <img src={kitBasico} alt="Kit Básico" className="mx-auto my-6 w-56 rounded-xl" />
               <p className="text-center text-sm text-ink-soft line-through">De USD $24,90</p>
               <p className="text-center">
                 <span className="text-4xl font-black">USD $<span className="text-6xl">9</span>,<span className="text-2xl">90</span></span>
@@ -704,7 +703,7 @@ function Landing() {
               className="mt-5 flex justify-center"
             >
               <motion.img
-                src={exitOffer.url}
+                src={exitOffer}
                 alt="Kit de Consultorio Juego"
                 className="w-full max-w-[280px] rounded-xl shadow-lg"
                 loading="lazy"
