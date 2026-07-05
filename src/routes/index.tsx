@@ -712,28 +712,29 @@ function Landing() {
             </p>
 
             <div className="mt-5 grid grid-cols-2 gap-3">
-              <div className="rounded-xl border border-line p-3 text-center">
+              <a
+                href="https://pay.wiapy.com/u8Lr8FTWrd"
+                target="_blank" rel="noopener noreferrer"
+                className="rounded-xl border border-line p-3 text-center hover:border-ink transition-colors cursor-pointer"
+              >
                 <p className="text-xs text-ink-soft font-semibold">BÁSICO</p>
                 <p className="line-through text-ink-soft text-xs">USD $9,90</p>
                 <p className="text-2xl font-black text-ink">USD $5</p>
-              </div>
-              <div className="rounded-xl border-2 border-primary p-3 text-center bg-primary/5">
+                <p className="mt-2 text-[11px] font-bold text-ink underline">Seleccionar</p>
+              </a>
+              <a
+                href="https://pay.wiapy.com/u8Lr8FTWrd"
+                target="_blank" rel="noopener noreferrer"
+                className="rounded-xl border-2 border-primary p-3 text-center bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer"
+              >
                 <p className="text-xs text-primary font-semibold">PREMIUM ⭐</p>
                 <p className="line-through text-ink-soft text-xs">USD $14,90</p>
                 <p className="text-2xl font-black text-primary">USD $10</p>
-              </div>
+                <p className="mt-2 text-[11px] font-bold text-primary underline">Seleccionar</p>
+              </a>
             </div>
 
-            <motion.a
-              href="https://pay.wiapy.com/u8Lr8FTWrd"
-              target="_blank" rel="noopener noreferrer"
-              className="btn-primary w-full mt-5"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-            >
-              Quiero aprovechar
-            </motion.a>
-            <p className="text-center text-xs text-ink-soft mt-2">Pago único. Acceso inmediato.</p>
+            <p className="text-center text-xs text-ink-soft mt-4">Pago único. Acceso inmediato.</p>
           </motion.div>
         </motion.div>
       )}
