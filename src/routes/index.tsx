@@ -492,7 +492,13 @@ function Landing() {
                 <span className="text-4xl font-black">USD $<span className="text-6xl">9</span>,<span className="text-2xl">90</span></span>
               </p>
               <p className="text-center text-sm text-ink-soft">Pago único</p>
-              <motion.a href="#" className="btn-primary mt-6 w-full !bg-ink hover:!bg-ink" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+              <motion.a
+                href="https://pay.wiapy.com/u8Lr8FTWrd"
+                target="_blank" rel="noopener noreferrer"
+                className="btn-primary mt-6 w-full !bg-ink hover:!bg-ink"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
                 <span>Quiero el kit básico</span>
               </motion.a>
               <ul className="mt-6 space-y-2 text-sm">
