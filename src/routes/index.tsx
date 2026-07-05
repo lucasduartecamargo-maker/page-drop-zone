@@ -105,9 +105,14 @@ function Landing() {
   ];
 
   const depoCards = [
-    { imgUrl: testimonial1.url, alt: "Testimonio 1" },
-    { imgUrl: testimonial2.url, alt: "Testimonio 2" },
-    { imgUrl: testimonial3.url, alt: "Testimonio 3" },
+    { imgUrl: kit1.url, alt: "Frasco de los Recuerdos" },
+    { imgUrl: kit2.url, alt: "Baraja de Sentimientos" },
+    { imgUrl: kit3.url, alt: "Laberinto de la Calma" },
+    { imgUrl: kit4.url, alt: "Termómetro de la Ansiedad" },
+    { imgUrl: kit5.url, alt: "Rueda de las Emociones" },
+    { imgUrl: kit6.url, alt: "Personas" },
+    { imgUrl: kit7.url, alt: "Cómo puedo autorregularme" },
+    { imgUrl: kit8.url, alt: "Tarjetas de emociones" },
   ];
 
   const faqs = [
